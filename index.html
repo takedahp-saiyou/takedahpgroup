@@ -769,19 +769,22 @@
 
                     const form = event.target;
                     const formData = new FormData(form);
-                    const data = {};
-                    let detailsHtml = '';
+                    const data = {}; // このdataオブジェクトに日本語のテキストを格納する
 
-                    // フォームデータを取得し、確認画面用のHTMLを生成
+                    // フォームデータを取得し、dataオブジェクトに日本語テキストを格納
                     for (let [key, value] of formData.entries()) {
-                        // selectボックスの値の場合は、表示用のテキストを取得
                         if (key === 'desired-facility' || key === 'desired-role' || key === 'internship-duration') {
                             const selectElement = form.querySelector(`#${key}`);
-                            value = selectElement && selectElement.options[selectElement.selectedIndex] ? selectElement.options[selectElement.selectedIndex].text : value;
+                            // selectボックスの表示テキスト（日本語）を取得
+                            data[key] = selectElement && selectElement.options[selectElement.selectedIndex] ? selectElement.options[selectElement.selectedIndex].text : value;
+                        } else {
+                            data[key] = value; // その他のフィールドはそのままの値
                         }
-
-                        data[key] = value; // GAS送信用のデータ
-
+                    }
+                    
+                    // 確認画面用のHTMLを生成 (dataオブジェクトから日本語テキストを使用)
+                    let detailsHtml = '';
+                    for (let key in data) { // dataオブジェクトを直接ループ
                         // 希望期間の from/to は個別に確認画面に表示しないようにスキップ
                         if (key.startsWith('desired-date-') && (key.endsWith('-from') || key.endsWith('-to'))) {
                              continue;
@@ -792,18 +795,18 @@
                             detailsHtml += `
                                 <div class="confirmation-detail-item">
                                     <span class="confirmation-detail-label">${fieldLabels[key]}</span>
-                                    <span class="confirmation-detail-value">${value || '未入力'}</span>
+                                    <span class="confirmation-detail-value">${data[key] || '未入力'}</span>
                                 </div>
                             `;
                         }
                     }
 
-                    // 希望期間を個別にまとめて表示するための追加処理
+                    // 希望期間を個別にまとめて表示するための追加処理 (dataオブジェクトから値を使用)
                     for (let i = 1; i <= 3; i++) {
                         const fromKey = `desired-date-${i}-from`;
                         const toKey = `desired-date-${i}-to`;
-                        const fromValue = formData.get(fromKey) || '';
-                        const toValue = formData.get(toKey) || '';
+                        const fromValue = data[fromKey] || ''; // dataオブジェクトから取得
+                        const toValue = data[toKey] || '';     // dataオブジェクトから取得
 
                         // 両方とも空の場合は表示しない
                         if (fromValue || toValue) {
@@ -831,11 +834,18 @@
                     
                     const form = internshipForm; // フォームの参照を再利用
                     const formData = new FormData(form);
-                    const data = {};
-                    for (let [key, value] of formData.entries()) {
-                        data[key] = value;
-                    }
+                    const data = {}; // 送信用にも新しいdataオブジェクトを用意し直す
 
+                    // 送信用データも日本語テキストで構成
+                    for (let [key, value] of formData.entries()) {
+                        if (key === 'desired-facility' || key === 'desired-role' || key === 'internship-duration') {
+                            const selectElement = form.querySelector(`#${key}`);
+                            data[key] = selectElement && selectElement.options[selectElement.selectedIndex] ? selectElement.options[selectElement.selectedIndex].text : value;
+                        } else {
+                            data[key] = value;
+                        }
+                    }
+                    
                     // Google Apps ScriptのウェブアプリURLをここに設定
                     // ★★★ ここを、Apps Scriptをデプロイした後に得られるURLに置き換えてください ★★★
                     // 例: "https://script.google.com/macros/s/AKfycbzJ93pIIJdU0M_LWZ-tlWhT7qDsrNGBAKxOINYQQIMU3-nlSZYIZWToP6GZJJim2JxZ/exec"
@@ -856,9 +866,9 @@
                             method: 'POST',
                             mode: 'no-cors', // CORSエラーを避けるため（ただし正確なレスポンスは受け取れない）
                             headers: {
-                                'Content-Type': 'application/json',
+                                'Content-Type': 'application/json; charset=UTF-8', // 文字コードを明示的に指定
                             },
-                            body: JSON.stringify(data),
+                            body: JSON.stringify(data), // 日本語テキストを含むdataオブジェクトを送信
                         });
 
                         console.log('Form submission attempted. Check Google Sheet.');

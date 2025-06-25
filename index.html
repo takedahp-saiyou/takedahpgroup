@@ -6,14 +6,14 @@
     <title>武田病院グループ 夏期インターンシッププログラム「フクシノイリグチ」</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Add for form -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- フォーム用に追加 -->
     <style>
-        /* Global styles */
+        /* グローバルなスタイル */
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f8f9fa;
             color: #343a40;
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-x: hidden; /* 横方向のスクロールを防止 */
         }
         .container {
             max-width: 1200px;
@@ -23,7 +23,7 @@
         .section-title {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #28a745; /* Green */
+            color: #28a745; /* 緑色 */
             margin-bottom: 2rem;
             text-align: center;
         }
@@ -49,40 +49,40 @@
             border-radius: 0.75rem;
             font-weight: 600;
             transition: background-color 0.3s ease;
-            display: block; /* Block element for line break */
-            margin-left: auto; /* Center alignment */
-            margin-right: auto; /* Center alignment */
+            display: block; /* ボタンをブロック要素にして改行 */
+            margin-left: auto; /* 中央寄せ */
+            margin-right: auto; /* 中央寄せ */
             cursor: pointer;
-            text-decoration: none; /* Remove default underline for anchor tag */
+            text-decoration: none; /* aタグのデフォルトの下線を消す */
         }
         .btn-primary:hover {
             background-color: #218838;
         }
-        /* Text logo style */
+        /* テキストロゴのスタイル */
         .text-logo {
-            font-size: 3.5rem; /* Larger */
+            font-size: 3.5rem; /* より大きく */
             font-weight: 700;
-            color: white; /* White to match header background */
+            color: white; /* ヘッダーの背景色に合わせて白に */
             margin-bottom: 2rem;
-            display: block; /* For center alignment */
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Add text shadow */
+            display: block; /* 中央揃えのため */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* テキストに影を追加 */
         }
         @media (max-width: 768px) {
             .text-logo {
-                font-size: 2.5rem; /* Adjust for mobile display */
+                font-size: 2.5rem; /* モバイルでの表示調整 */
             }
         }
 
-        /* Highlight box style */
+        /* ハイライトされたテキストの背景スタイル */
         .highlight-box {
-            background-color: rgba(220, 255, 220, 0.9); /* Light green background */
+            background-color: rgba(220, 255, 220, 0.9); /* 薄い緑色の背景 */
             padding: 1.5rem;
             border-radius: 1rem;
-            margin-top: 1.5rem; /* Spacing from top element */
-            margin-bottom: 1.5rem; /* Spacing from bottom element */
-            box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1); /* Add shadow */
-            display: inline-block; /* Adjust to content width */
-            max-width: 100%; /* Prevent overflow from parent */
+            margin-top: 1.5rem; /* 上の要素との間隔 */
+            margin-bottom: 1.5rem; /* 下の要素との間隔 */
+            box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1); /* 影を追加 */
+            display: inline-block; /* コンテンツの幅に合わせる */
+            max-width: 100%; /* 親要素からはみ出さないように */
         }
 
         .course-card {
@@ -1083,11 +1083,11 @@
                     console.log("Data to be sent (URLSearchParams):", submissionParams.toString()); // Log the actual string being sent
                     
                     // Google Apps ScriptのウェブアプリURLをここに設定
-                    const appsScriptUrl = "https://script.google.com/macros/s/AKfycbwqmSu3Ett6xQZGITYoE88ZHCOxmizbmpA1_53wP4RK7osC3sVZYcKQCYKeb9RrYw9J/exec"; 
+                    const appsScriptUrl = "https://script.google.com/macros/s/AKfycbwfyNOhijV3NzYqvOLzd2rN5oLJf-xXChxUSDLHqbMqz0QVF17Xr-xj5cvOwZ2vgm7B/exec"; 
 
                     // Check if URL is still a placeholder and raise an error
                     if (appsScriptUrl === "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE" || !appsScriptUrl.startsWith("https://script.google.com/macros/s/")) {
-                        console.error("エラー: Google Apps ScriptのURLが設定されていません。コード内の 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE' を実際のURLに置き換えてください。");
+                        console.error("エラー: Google Apps ScriptのURLが設定されていません。コード内の 'https://script.google.com/macros/s/AKfycbwfyNOhijV3NzYqvOLzd2rN5oLJf-xXChxUSDLHqbMqz0QVF17Xr-xj5cvOwZ2vgm7B/exec' を実際のURLに置き換えてください。");
                         alert("設定エラー: お申込みを送信できませんでした。開発者にお問い合わせください。");
                         return; // Stop submission process
                     }

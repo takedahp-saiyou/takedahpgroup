@@ -1083,11 +1083,11 @@
                     console.log("Data to be sent (URLSearchParams):", submissionParams.toString()); // Log the actual string being sent
                     
                     // Google Apps ScriptのウェブアプリURLをここに設定
-                    const appsScriptUrl = "https://script.google.com/macros/s/AKfycbwKQu3LMXWsr_4j7qb2Mv_PxiItLvY0FMcKz1-M92JRWsaVIsiBpqt431YST2MuQble/exec"; 
+                    const appsScriptUrl = "https://script.google.com/macros/s/AKfycbwfyNOhijV3NzYqvOLzd2rN5oLJf-xXChxUSDLHqbMqz0QVF17Xr-xj5cvOwZ2vgm7B/exec"; 
 
                     // Check if URL is still a placeholder and raise an error
                     if (appsScriptUrl === "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE" || !appsScriptUrl.startsWith("https://script.google.com/macros/s/")) {
-                        console.error("エラー: Google Apps ScriptのURLが設定されていません。コード内の 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE' を実際のURLに置き換えてください。");
+                        console.error("エラー: Google Apps ScriptのURLが設定されていません。コード内の 'https://script.google.com/macros/s/AKfycbwfyNOhijV3NzYqvOLzd2rN5oLJf-xXChxUSDLHqbMqz0QVF17Xr-xj5cvOwZ2vgm7B/exec' を実際のURLに置き換えてください。");
                         alert("設定エラー: お申込みを送信できませんでした。開発者にお問い合わせください。");
                         return; // Stop submission process
                     }

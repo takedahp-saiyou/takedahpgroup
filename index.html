@@ -6,14 +6,14 @@
     <title>武田病院グループ 夏期インターンシッププログラム「フクシノイリグチ」</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- フォーム用に追加 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Add for form -->
     <style>
-        /* グローバルなスタイル */
+        /* Global styles */
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f8f9fa;
             color: #343a40;
-            overflow-x: hidden; /* 横方向のスクロールを防止 */
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
         .container {
             max-width: 1200px;
@@ -23,7 +23,7 @@
         .section-title {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #28a745; /* 緑色 */
+            color: #28a745; /* Green */
             margin-bottom: 2rem;
             text-align: center;
         }
@@ -49,40 +49,40 @@
             border-radius: 0.75rem;
             font-weight: 600;
             transition: background-color 0.3s ease;
-            display: block; /* ボタンをブロック要素にして改行 */
-            margin-left: auto; /* 中央寄せ */
-            margin-right: auto; /* 中央寄せ */
+            display: block; /* Block element for line break */
+            margin-left: auto; /* Center alignment */
+            margin-right: auto; /* Center alignment */
             cursor: pointer;
-            text-decoration: none; /* aタグのデフォルトの下線を消す */
+            text-decoration: none; /* Remove default underline for anchor tag */
         }
         .btn-primary:hover {
             background-color: #218838;
         }
-        /* テキストロゴのスタイル */
+        /* Text logo style */
         .text-logo {
-            font-size: 3.5rem; /* より大きく */
+            font-size: 3.5rem; /* Larger */
             font-weight: 700;
-            color: white; /* ヘッダーの背景色に合わせて白に */
+            color: white; /* White to match header background */
             margin-bottom: 2rem;
-            display: block; /* 中央揃えのため */
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* テキストに影を追加 */
+            display: block; /* For center alignment */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Add text shadow */
         }
         @media (max-width: 768px) {
             .text-logo {
-                font-size: 2.5rem; /* モバイルでの表示調整 */
+                font-size: 2.5rem; /* Adjust for mobile display */
             }
         }
 
-        /* ハイライトされたテキストの背景スタイル */
+        /* Highlight box style */
         .highlight-box {
-            background-color: rgba(220, 255, 220, 0.9); /* 薄い緑色の背景 */
+            background-color: rgba(220, 255, 220, 0.9); /* Light green background */
             padding: 1.5rem;
             border-radius: 1rem;
-            margin-top: 1.5rem; /* 上の要素との間隔 */
-            margin-bottom: 1.5rem; /* 下の要素との間隔 */
-            box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1); /* 影を追加 */
-            display: inline-block; /* コンテンツの幅に合わせる */
-            max-width: 100%; /* 親要素からはみ出さないように */
+            margin-top: 1.5rem; /* Spacing from top element */
+            margin-bottom: 1.5rem; /* Spacing from bottom element */
+            box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1); /* Add shadow */
+            display: inline-block; /* Adjust to content width */
+            max-width: 100%; /* Prevent overflow from parent */
         }
 
         .course-card {
@@ -802,10 +802,10 @@
                         <label for="desired-role">希望するインターン <span class="required-star">*</span></label>
                         <select id="desired-role" name="desired-role" required>
                             <option value="">選択してください</option>
-                            <option value="facility-tour-and-info-session">施設見学+企業説明</option>
-                            <option value="care-work-experience">介護業務体験</option>
-                            <option value="consultation-support-experience">相談援助体験</option>
-                            <option value="other-role">その他（備考欄に記入）</option>
+                            <option value="施設見学+企業説明">施設見学+企業説明</option>
+                            <option value="介護業務体験">介護業務体験</option>
+                            <option value="相談援助体験">相談援助体験</option>
+                            <option value="その他（備考欄に記入）">その他（備考欄に記入）</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -817,12 +817,12 @@
                         <label for="internship-duration">期間 <span class="required-star">*</span></label>
                         <select id="internship-duration" name="internship-duration" required>
                             <option value="">選択してください</option>
-                            <option value="1-day">1日</option>
-                            <option value="2-days">2日</option>
-                            <option value="3-days">3日</option>
-                            <option value="4-days">4日</option>
-                            <option value="5-days">5日</option>
-                            <option value="other-duration">その他（備考欄に記入）</option>
+                            <option value="1日">1日</option>
+                            <option value="2日">2日</option>
+                            <option value="3日">3日</option>
+                            <option value="4日">4日</option>
+                            <option value="5日">5日</option>
+                            <option value="その他（備考欄に記入）">その他（備考欄に記入）</option>
                         </select>
                     </div>
                     <!-- Desired participation date (1st preference period) -->
@@ -892,7 +892,7 @@
             const backToEventPageButton = document.getElementById('backToEventPageButton'); // Back button in form
 
 
-            // Mapping of form field names to Japanese labels
+            // Mapping of form field names to Japanese labels for display in confirmation/email
             const fieldLabels = {
                 'name': 'お名前',
                 'kana': 'フリガナ',
@@ -951,7 +951,7 @@
                 internshipForm.addEventListener('submit', async function(event) {
                     event.preventDefault(); // Cancel default form submission
 
-                    // Validate form input
+                    // Validate form input (checkboxes)
                     const desiredFacilityCheckboxes = document.querySelectorAll('input[name="desired-facility"]');
                     let isFacilityChecked = false;
                     for(const checkbox of desiredFacilityCheckboxes) {
@@ -966,6 +966,7 @@
                         return;
                     }
 
+                    // Validate other required fields
                     if (!internshipForm.checkValidity()) {
                         internshipForm.reportValidity(); // Display browser's default validation message
                         return; // Stop submission process
@@ -974,24 +975,24 @@
                     const form = event.target;
                     const data = {}; // Object to store Japanese text for confirmation and email
 
-                    // Populate 'data' object for confirmation modal and email body display
+                    // Populate 'data' object from form elements
                     data['name'] = form.elements['name'].value;
                     data['kana'] = form.elements['kana'].value;
                     data['email'] = form.elements['email'].value;
                     data['phone'] = form.elements['phone'].value;
 
-                    // Handle desired-facility from checked checkboxes
+                    // Handle desired-facility from checked checkboxes (get displayed text)
                     const selectedFacilitiesForDisplay = Array.from(document.querySelectorAll('input[name="desired-facility"]:checked'))
-                        .map(cb => cb.value);
+                        .map(cb => cb.value); // Checkbox values are already Japanese
                     data['desired-facility'] = selectedFacilitiesForDisplay.join(', ');
 
                     // Handle desired-role (select dropdown) - get displayed text
                     const desiredRoleSelect = form.elements['desired-role'];
-                    data['desired-role'] = desiredRoleSelect.selectedOptions[0].text;
+                    data['desired-role'] = desiredRoleSelect.selectedOptions[0].text; // Get displayed text
 
                     // Handle internship-duration (select dropdown) - get displayed text
                     const internshipDurationSelect = form.elements['internship-duration'];
-                    data['internship-duration'] = internshipDurationSelect.selectedOptions[0].text;
+                    data['internship-duration'] = internshipDurationSelect.selectedOptions[0].text; // Get displayed text
 
                     data['desired-date-1-from'] = form.elements['desired-date-1-from'].value;
                     data['desired-date-1-to'] = form.elements['desired-date-1-to'].value;
@@ -1001,15 +1002,12 @@
                     data['desired-date-3-to'] = form.elements['desired-date-3-to'].value;
                     data['message'] = form.elements['message'].value;
                     
-                    // Generate HTML for confirmation screen (use Japanese text from data object)
+                    // Generate HTML for confirmation screen (using 'data' for Japanese display)
                     let detailsHtml = '';
-                    for (let key in data) { // Loop directly through data object
-                        // Skip from/to of desired period as they are displayed separately in confirmation screen
+                    for (let key in data) { 
                         if (key.startsWith('desired-date-') && (key.endsWith('-from') || key.endsWith('-to'))) {
                              continue;
                         }
-
-                        // Generate HTML for confirmation screen display
                         if (fieldLabels[key]) {
                             detailsHtml += `
                                 <div class="confirmation-detail-item">
@@ -1020,14 +1018,10 @@
                         }
                     }
 
-                    // Additional processing to display desired period together (use values from data object)
+                    // Display date ranges
                     for (let i = 1; i <= 3; i++) {
-                        const fromKey = `desired-date-${i}-from`;
-                        const toKey = `desired-date-${i}-to`;
-                        const fromValue = data[fromKey] || ''; // Get from data object
-                        const toValue = data[toKey] || '';     // Get from data object
-
-                        // Do not display if both are empty
+                        const fromValue = data[`desired-date-${i}-from`] || '';
+                        const toValue = data[`desired-date-${i}-to`] || '';
                         if (fromValue || toValue) {
                             detailsHtml += `
                                 <div class="confirmation-detail-item">
@@ -1049,56 +1043,68 @@
 
                 // "Submit" button on confirmation screen (data submission to GAS)
                 confirmSubmitButton.addEventListener('click', async function() {
-                    console.log("Attempting to send form data..."); // Add log
+                    console.log("Attempting to send form data...");
                     confirmationModal.classList.remove('active'); // Close modal after submission
                     
                     const form = internshipForm;
-                    const formData = new FormData(form);
+                    const submissionData = {}; // Object to hold data for GAS submission (using values suitable for GAS)
 
-                    // Create URLSearchParams for submission, collecting all data including multiple checkboxes
-                    const submissionParams = new URLSearchParams();
-                    // For text/email/tel/textarea/date fields, FormData.entries() works directly
-                    formData.forEach((value, key) => {
-                        // Skip desired-facility, desired-role, and internship-duration here, as they are handled explicitly
-                        if (key !== 'desired-facility' && key !== 'desired-role' && key !== 'internship-duration') {
-                             submissionParams.append(key, value);
-                        }
-                    });
+                    // Populate submissionData from form elements
+                    submissionData['name'] = form.elements['name'].value;
+                    submissionData['kana'] = form.elements['kana'].value;
+                    submissionData['email'] = form.elements['email'].value;
+                    submissionData['phone'] = form.elements['phone'].value;
 
-                    // Manually append all checked desired-facility values
-                    Array.from(document.querySelectorAll('input[name="desired-facility"]:checked'))
-                        .map(cb => cb.value)
-                        .forEach(facility => {
-                            submissionParams.append('desired-facility', facility);
-                        });
+                    // For checkboxes, directly collect checked values
+                    submissionData['desired-facility'] = Array.from(document.querySelectorAll('input[name="desired-facility"]:checked'))
+                        .map(cb => cb.value); // These values are already Japanese
 
-                    // Manually append selected text (not value) for desired-role and internship-duration
+                    // For select dropdowns, get the displayed text (日本語)
                     const desiredRoleSelect = form.elements['desired-role'];
-                    submissionParams.append('desired-role', desiredRoleSelect.selectedOptions[0].text);
+                    submissionData['desired-role'] = desiredRoleSelect.selectedOptions[0].text;
 
                     const internshipDurationSelect = form.elements['internship-duration'];
-                    submissionParams.append('internship-duration', internshipDurationSelect.selectedOptions[0].text);
+                    submissionData['internship-duration'] = internshipDurationSelect.selectedOptions[0].text;
+
+                    submissionData['desired-date-1-from'] = form.elements['desired-date-1-from'].value;
+                    submissionData['desired-date-1-to'] = form.elements['desired-date-1-to'].value;
+                    submissionData['desired-date-2-from'] = form.elements['desired-date-2-from'].value;
+                    submissionData['desired-date-2-to'] = form.elements['desired-date-2-to'].value;
+                    submissionData['desired-date-3-from'] = form.elements['desired-date-3-from'].value;
+                    submissionData['desired-date-3-to'] = form.elements['desired-date-3-to'].value;
+                    submissionData['message'] = form.elements['message'].value;
 
 
-                    console.log("Data to be sent (URLSearchParams):", submissionParams.toString()); // Log the actual string being sent
+                    // Convert submissionData to URLSearchParams format for POST request
+                    const submissionParams = new URLSearchParams();
+                    for (const key in submissionData) {
+                        if (Array.isArray(submissionData[key])) {
+                            // If it's an array (like desired-facility), append each item separately
+                            submissionData[key].forEach(item => submissionParams.append(key, item));
+                        } else {
+                            submissionParams.append(key, submissionData[key]);
+                        }
+                    }
+
+                    console.log("Data to be sent (URLSearchParams):", submissionParams.toString());
                     
                     // Google Apps ScriptのウェブアプリURLをここに設定
-                    const appsScriptUrl = "https://script.google.com/macros/s/AKfycbwfyNOhijV3NzYqvOLzd2rN5oLJf-xXChxUSDLHqbMqz0QVF17Xr-xj5cvOwZ2vgm7B/exec"; 
+                    const appsScriptUrl = "https://script.google.com/macros/s/AKfycbxQ51Q_S4oS7W1Hy0n86v7JeL1j7IGivQnN7gGhO6L3AMtnnrP9IYhfqQ1vBaCVX4wY/exec"; 
 
                     // Check if URL is still a placeholder and raise an error
                     if (appsScriptUrl === "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE" || !appsScriptUrl.startsWith("https://script.google.com/macros/s/")) {
-                        console.error("エラー: Google Apps ScriptのURLが設定されていません。コード内の 'https://script.google.com/macros/s/AKfycbwfyNOhijV3NzYqvOLzd2rN5oLJf-xXChxUSDLHqbMqz0QVF17Xr-xj5cvOwZ2vgm7B/exec' を実際のURLに置き換えてください。");
+                        console.error("エラー: Google Apps ScriptのURLが設定されていません。コード内の 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE' を実際のURLに置き換えてください。");
                         alert("設定エラー: お申込みを送信できませんでした。開発者にお問い合わせください。");
                         return; // Stop submission process
                     }
 
                     try {
-                        console.log("Sending fetch request to:", appsScriptUrl); // Add log
+                        console.log("Sending fetch request to:", appsScriptUrl);
                         const response = await fetch(appsScriptUrl, {
                             method: 'POST',
                             mode: 'no-cors', // To avoid CORS errors (but exact response cannot be received)
                             headers: {
-                                'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', // Change Content-Type
+                                'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', // Ensure correct Content-Type
                             },
                             body: submissionParams.toString(), // Send as URL-encoded string
                         });

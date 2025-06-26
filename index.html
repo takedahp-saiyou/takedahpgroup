@@ -6,14 +6,14 @@
     <title>武田病院グループ 夏期インターンシッププログラム「フクシノイリグチ」</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Add for form -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- フォーム用に追加 -->
     <style>
-        /* Global styles */
+        /* グローバルなスタイル */
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f8f9fa;
             color: #343a40;
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-x: hidden; /* 横方向のスクロールを防止 */
         }
         .container {
             max-width: 1200px;
@@ -23,7 +23,7 @@
         .section-title {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #28a745; /* Green */
+            color: #28a745; /* 緑色 */
             margin-bottom: 2rem;
             text-align: center;
         }
@@ -49,40 +49,40 @@
             border-radius: 0.75rem;
             font-weight: 600;
             transition: background-color 0.3s ease;
-            display: block; /* Block element for line break */
-            margin-left: auto; /* Center alignment */
-            margin-right: auto; /* Center alignment */
+            display: block; /* ボタンをブロック要素にして改行 */
+            margin-left: auto; /* 中央寄せ */
+            margin-right: auto; /* 中央寄せ */
             cursor: pointer;
-            text-decoration: none; /* Remove default underline for anchor tag */
+            text-decoration: none; /* aタグのデフォルトの下線を消す */
         }
         .btn-primary:hover {
             background-color: #218838;
         }
-        /* Text logo style */
+        /* テキストロゴのスタイル */
         .text-logo {
-            font-size: 3.5rem; /* Larger */
+            font-size: 3.5rem; /* より大きく */
             font-weight: 700;
-            color: white; /* White to match header background */
+            color: white; /* ヘッダーの背景色に合わせて白に */
             margin-bottom: 2rem;
-            display: block; /* For center alignment */
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Add text shadow */
+            display: block; /* 中央揃えのため */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* テキストに影を追加 */
         }
         @media (max-width: 768px) {
             .text-logo {
-                font-size: 2.5rem; /* Adjust for mobile display */
+                font-size: 2.5rem; /* モバイルでの表示調整 */
             }
         }
 
-        /* Highlight box style */
+        /* ハイライトされたテキストの背景スタイル */
         .highlight-box {
-            background-color: rgba(220, 255, 220, 0.9); /* Light green background */
+            background-color: rgba(220, 255, 220, 0.9); /* 薄い緑色の背景 */
             padding: 1.5rem;
             border-radius: 1rem;
-            margin-top: 1.5rem; /* Spacing from top element */
-            margin-bottom: 1.5rem; /* Spacing from bottom element */
-            box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1); /* Add shadow */
-            display: inline-block; /* Adjust to content width */
-            max-width: 100%; /* Prevent overflow from parent */
+            margin-top: 1.5rem; /* 上の要素との間隔 */
+            margin-bottom: 1.5rem; /* 下の要素との間隔 */
+            box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1); /* 影を追加 */
+            display: inline-block; /* コンテンツの幅に合わせる */
+            max-width: 100%; /* 親要素からはみ出さないように */
         }
 
         .course-card {
@@ -493,74 +493,6 @@
                             <li>日程：令和7年7月～9月</li>
                             <li>定員：介護体験型 1日につき2名、相談援助体験型 1日につき1名</li>
                             <li>時間：10:00～15:00（昼食付）</li>
-                        </ul>
-                        <p class="text-gray-600 mt-4">24時間365日異なる介護や、多様な相談援助の仕事を体験できます。</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Course details section -->
-            <section id="course-details" class="py-12">
-                <h2 class="section-title">各コース詳細</h2>
-                <!-- I. Open Company (Company Info Session & Facility Tour) -->
-                <div class="card">
-                    <h3 class="text-2xl font-bold text-green-700 mb-4">Ⅰ. オープンカンパニー（企業説明会・施設見学会）</h3>
-                    <p class="mb-4">介護業界、武田病院グループ、働き方、職場の雰囲気について知りたいというあなたの疑問を解消するセミナーです。<br>
-                    オンラインも同時開催中！（所要時間1時間程度）<br>
-                    （オンライン開催は、企業説明のみです。）</p>
-                    <p class="text-lg mb-2">こんな方におすすめ：</p>
-                    <ul class="list-disc list-inside ml-4 text-left">
-                        <li>介護業界について知りたい</li>
-                        <li>武田病院グループのことについて知りたい</li>
-                        <li>施設の中を見てみたい</li>
-                        <li>どんな働き方をしているのか知りたい</li>
-                        <li>どんな人が働いているのか知りたい</li>
-                    </ul>
-                </div>
-
-                <!-- II. Care Work / Consultation Support Experience 1-Day Course -->
-                <div class="card">
-                    <h3 class="text-2xl font-bold text-green-700 mb-4">Ⅱ. 介護の仕事・相談援助の仕事<br>お気軽体験1日コース</h3>
-                    <p class="mb-4">介護の仕事の流れや認知症の方への対応、相談援助の具体的な内容を体験できます。<br>
-                    <span class="font-bold">タイムスケジュール例：</span><br>
-                    10:00 担当者との顔合わせ、今日一日のスケジュール確認<br>
-                    10:15 介護現場での注意点など座学にて勉強会<br>
-                    11:00 いざ現場体験へ！昼食前の嚥下体操に参加、食事準備など<br>
-                    12:30 休憩（食事は準備します！）職員との団欒も♪<br>
-                    13:30 実際の介護体験、見学！車椅子の使い方やベッドでの体位変換体験など<br>
-                    14:30 担当者からのフィードバック<br>
-                    15:00 終了<br>
-                    ※スケジュールはカスタマイズ可能です</p>
-                </div>
-
-                <!-- III. Intensive Experience Free Customization Course -->
-                <div class="card">
-                    <h3 class="text-2xl font-bold text-green-700 mb-4">Ⅲ. 介護の仕事・相談援助の仕事<br>ガッツリ体験フリーカスタマイズコース</h3>
-                    <p class="mb-4">2種類の介護体験プログラムです。ご希望を伺いながら「あなただけ」のプログラムを作成します！</p>
-                    <p class="font-bold text-lg mb-2">★介護体験型　定員：1日につき2名</p>
-                    <p class="text-gray-700 mb-2">例：日勤×2日、夜勤×1日、休み×1日、日勤×1日のプラン<br>
-                    ご利用者に寄り添う介護の体験を少し深く知りたい方、24時間、365日違う介護を体験してみませんか？</p>
-                    <p class="font-bold text-lg mt-4 mb-2">★相談援助体験型　定員：1日につき1名</p>
-                    <p class="text-gray-700">例：1、2日目：特養施設相談員のお仕事<br>
-                    　　3日目：通所相談員のお仕事<br>
-                    　　4日目：地域包括支援センターでのお仕事<br>
-                    　　5日目：特養施設相談員のお仕事とフィードバック</p>
-                </div>
-            </section>
-
-
-            <section id="facilities" class="py-12">
-                <h2 class="section-title">体験施設一覧</h2>
-                <p class="text-center text-lg mb-8">自宅から、学校から近い場所は？特別養護老人ホームについて知りたい！老人保健施設ってなんだろう？などなど選ぶ理由は様々でOK!</p>
-                <div class="facility-grid">
-                    <!-- Corrected course notation for each facility card -->
-                    <div class="facility-card">
-                        <!-- Image of Villa Inariyama -->
-                        <img src="https://i.imgur.com/epI7drI.jpeg" alt="特別養護老人ホームヴィラ稲荷山 画像" class="w-full h-48 object-cover rounded-t-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=画像+読み込み失敗';console.error('画像読み込み失敗: 特別養護老人ホームヴィラ稲荷山。Imgurの直接リンクが正しいか、Imgurの共有設定を確認してください。');">
-                        <h4 class="font-bold text-lg text-gray-800">特別養護老人ホームヴィラ稲荷山</h4>
-                        <p class="text-sm text-gray-600">（京都市伏見区）</p>
-                        <p class="text-sm course-support-text">
-                            <span class="orange-text">対応可能なインターンシップ</span>
                             <span class="text-green-600">・オープンカンパニー</span>
                             <span class="text-green-600">・介護1日体験</span>
                             <span class="text-green-600">・相談援助1日体験</span>
@@ -570,7 +502,7 @@
                             <span class="font-bold">アクセス：</span><br>
                             京阪本線「鳥羽街道」下車、徒歩5分<br>
                             ＪＲ奈良線「東福寺」または「稲荷」下車、徒歩15分<br>
-                            <a href="https://www.google.com/maps/place/%E7%89%B9%E5%88%A5%E9%A4%8A%E8%AD%B7%E8%80%81%E4%BA%BA%E3%83%9B%E3%83%BC%E3%83%A0+%E3%83%B4%E3%82%A3%E3%83%A9%E7%A8%B2%E8%8D%B7%E5%B1%B1/@34.973428,135.773016,15z/data=!4m6!3m5!1s0x60010f38d335bbc7:0x95628922e797d8e3!8m2!3d34.9734284!4d135.7730161!16s%2Fg%2F1tfjfflc?hl=ja&entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
+                            <a href="https://www.google.com/maps/place/%E7%89%B9%E5%88%A5%E9%A4%8A%E8%AD%B7%E8%80%81%E4%BA%BA%E3%83%9B%E3%83%BC%E3%83%A0+%E3%83%B4%E3%82%A3%E3%83%A9%E7%A8%B2%E8%8D%B7%E5%B1%B1/@34.973428,135.773016,15z/data=!4m6!3m5!1s0x60010f38d335bbc7:0x95628922e797d8e3!8m2!3d34.9734284!4d135.7730161!16s%2Fg%2F1tfjfflc?hl=ja&entry=ttu&g_ep=EgoyMDI1MDYx七.0IKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
                         </p>
                     </div>
                     <div class="facility-card">
@@ -599,7 +531,7 @@
                             <span class="font-bold">アクセス：</span><br>
                             地下鉄東西線「椥辻」駅徒歩15分<br>
                             JR「山科」駅から京阪バス26系統大宅行「大宅」停下車徒歩7分<br>
-                            <a href="https://www.google.com/maps?ll=34.971131,135.826098&z=15&t=m&hl=ja&gl=JP&mapclient=embed&cid=9465310590999781784" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
+                            <a href="https://www.google.com/maps/place/%E7%89%B9%E5%88%A5%E9%A4%8A%E8%AD%B7%E8%80%81%E4%BA%BA%E3%83%9B%E3%83%BC%E3%83%A0+%E3%83%B4%E3%82%A3%E3%83%A9%E7%A8%B2%E8%8D%B7%E5%B1%B1/@34.973428,135.773016,15z/data=!4m6!3m5!1s0x60010f38d335bbc7:0x95628922e797d8e3!8m2!3d34.9734284!4d135.7730161!16s%2Fg%2F1tfjfflc?hl=ja&entry=ttu&g_ep=EgoyMDI1MDYx七.0IKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
                         </p>
                     </div>
                     <div class="facility-card">
@@ -660,7 +592,7 @@
                             <span class="font-bold">アクセス：</span><br>
                             JR奈良線、京阪宇治線「黄檗駅」から南西に徒歩15分<br>
                             京阪電車「三室戸駅」から北西に徒歩15分<br>
-                            <a href="https://www.google.com/maps?ll=34.906845,135.798297,15z/data=!4m6!3m5!1s0x600111b7a43af13f:0xf90536d85377c501!8m2!3d34.906845!4d135.7982968!16s%2Fg%2F11bxfg78r4?hl=ja&entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
+                            <a href="https://www.google.com/maps?ll=34.906845,135.798297,15z/data=!4m6!3m5!1s0x600111b7a43af13f:0xf90536d85377c501!8m2!3d34.906845!4d135.7982968!16s%2Fg%2F11bxfg78r4?hl=ja&entry=ttu&g_ep=EgoyMDI1MDYx七.0IKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
                         </p>
                     </div>
                     <div class="facility-card">
@@ -673,8 +605,8 @@
                         </p>
                         <p class="text-sm text-gray-600 mt-2 access-info">
                             <span class="font-bold">アクセス：</span><br>
-                            近鉄京都線「久津川駅」下車徒歩8分<br>
-                            JR奈良線「城陽駅」下車徒歩15分<br>
+                            近鉄京都線「久津川駅」下車、徒歩8分<br>
+                            JR奈良線「城陽駅」下車、徒歩15分<br>
                             <a href="https://www.google.com/maps?ll=34.861938,135.778045&z=15&t=m&hl=ja&gl=JP&mapclient=embed&cid=4696354945431619474" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
                         </p>
                     </div>
@@ -706,7 +638,7 @@
                             <span class="font-bold">アクセス：</span><br>
                             JR京都駅・近鉄京都駅・京都市営地下鉄京都駅から徒歩10分<br>
                             京都市営バス 七条堀川バス停から徒歩3分・下京総合庁舎前から徒歩5分<br>
-                            <a href="https://www.google.com/maps/place/%E6%9C%A8%E6%B4%A5%E5%B1%8B%E6%A9%8B%E6%AD%A6%E7%94%B0%E7%97%85%E9%99%A2+%E4%BB%8B%E8%AD%B7%E5%8C%BB%E7%99%82%E9%99%A2/@34.988622,135.753995,15z/data=!4m6!3m5!1s0x600108a7afa97a6b:0xe3481695ae573098!8m2!3d34.9886224!4d135.7539945!16s%2Fg%2F1tk67l8g?hl=ja&entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
+                            <a href="https://www.google.com/maps/place/%E6%9C%A8%E6%B4%A5%E5%B1%8B%E6%A9%8B%E6%AD%A6%E7%94%B0%E7%97%85%E9%99%A2+%E4%BB%8B%E8%AD%B7%E5%8C%BB%E7%99%82%E9%99%A2/@34.988622,135.753995,15z/data=!4m6!3m5!1s0x600108a7afa97a6b:0xe3481695ae573098!8m2!3d34.9886224!4d135.7539945!16s%2Fg%2F1tk67l8g?hl=ja&entry=ttu&g_ep=EgoyMDI1MDYx七.0IKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
                         </p>
                     </div>
                     <div class="facility-card">
@@ -760,7 +692,7 @@
         <div class="container">
             <section id="internship-form-section" class="internship-form-section">
                 <h2>インターンシップ お申込みフォーム</h2>
-                <p>下記フォームに必要事項をご記入の上、送信してください。</p>
+                <p>下記フォームに必要事項をご記入の上,送信してください。</p>
                 <form class="internship-form" id="internshipForm">
                     <div class="form-group">
                         <label for="name">お名前 <span class="required-star">*</span></label>
@@ -793,8 +725,7 @@
                             <label><input type="checkbox" name="desired-facility" value="グループホーム鳳凰槇島">グループホーム鳳凰槇島</label>
                             <label><input type="checkbox" name="desired-facility" value="木津屋橋武田病院介護医療院">木津屋橋武田病院介護医療院</label>
                             <label><input type="checkbox" name="desired-facility" value="京都市下京・中部地域包括支援センター">京都市下京・中部地域包括支援センター</label>
-                            <label><input type="checkbox" name="desired-facility" value="体験場所が決められないので相談したい">体験場所が決められないので相談したい</label> <!-- Added option -->
-                            <label><input type="checkbox" name="desired-facility" value="その他（備考欄に記入）">その他（備考欄に記入）</label>
+                            <label><input type="checkbox" name="desired-facility" value="その他（その他ご質問・メッセージに記入）">その他（その他ご質問・メッセージに記入）</label> <!-- 修正点 -->
                         </div>
                     </div>
                     <!-- Add desired internship -->
@@ -1089,11 +1020,11 @@
                     console.log("Data to be sent (URLSearchParams):", submissionParams.toString());
                     
                     // Google Apps ScriptのウェブアプリURLをここに設定
-                    const appsScriptUrl = "https://script.google.com/macros/s/AKfycbxQ51Q_S4oS7W1Hy0n86v7JeL1j7IGivQnN7gGhO6L3AMtnnrP9IYhfqQ1vBaCVX4wY/exec"; 
+                    const appsScriptUrl = "https://script.google.com/macros/s/AKfycbzR4B8CLshiz9m6pe671pe3eop8ka9MC3ozSOFoQvG9PwnRo0IlHWk6uHh4HN1rQOYH/exec"; 
 
                     // Check if URL is still a placeholder and raise an error
                     if (appsScriptUrl === "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE" || !appsScriptUrl.startsWith("https://script.google.com/macros/s/")) {
-                        console.error("エラー: Google Apps ScriptのURLが設定されていません。コード内の 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE' を実際のURLに置き換えてください。");
+                        console.error("エラー: Google Apps ScriptのURLが設定されていません。コード内の 'https://script.google.com/macros/s/AKfycbzR4B8CLshiz9m6pe671pe3eop8ka9MC3ozSOFoQvG9PwnRo0IlHWk6uHh4HN1rQOYH/exec' を実際のURLに置き換えてください。");
                         alert("設定エラー: お申込みを送信できませんでした。開発者にお問い合わせください。");
                         return; // Stop submission process
                     }

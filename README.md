@@ -493,6 +493,74 @@
                             <li>日程：令和7年7月～9月</li>
                             <li>定員：介護体験型 1日につき2名、相談援助体験型 1日につき1名</li>
                             <li>時間：10:00～15:00（昼食付）</li>
+                        </ul>
+                        <p class="text-gray-600 mt-4">24時間365日異なる介護や、多様な相談援助の仕事を体験できます。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Course details section -->
+            <section id="course-details" class="py-12">
+                <h2 class="section-title">各コース詳細</h2>
+                <!-- I. Open Company (Company Info Session & Facility Tour) -->
+                <div class="card">
+                    <h3 class="text-2xl font-bold text-green-700 mb-4">Ⅰ. オープンカンパニー（企業説明会・施設見学会）</h3>
+                    <p class="mb-4">介護業界、武田病院グループ、働き方、職場の雰囲気について知りたいというあなたの疑問を解消するセミナーです。<br>
+                    オンラインも同時開催中！（所要時間1時間程度）<br>
+                    （オンライン開催は、企業説明のみです。）</p>
+                    <p class="text-lg mb-2">こんな方におすすめ：</p>
+                    <ul class="list-disc list-inside ml-4 text-left">
+                        <li>介護業界について知りたい</li>
+                        <li>武田病院グループのことについて知りたい</li>
+                        <li>施設の中を見てみたい</li>
+                        <li>どんな働き方をしているのか知りたい</li>
+                        <li>どんな人が働いているのか知りたい</li>
+                    </ul>
+                </div>
+
+                <!-- II. Care Work / Consultation Support Experience 1-Day Course -->
+                <div class="card">
+                    <h3 class="text-2xl font-bold text-green-700 mb-4">Ⅱ. 介護の仕事・相談援助の仕事<br>お気軽体験1日コース</h3>
+                    <p class="mb-4">介護現場の1日の流れや認知症の方への対応、相談援助の具体的な内容を体験できます。<br>
+                    <span class="font-bold">タイムスケジュール例：</span><br>
+                    10:00 担当者との顔合わせ、今日一日のスケジュール確認<br>
+                    10:15 介護現場での注意点など座学にて勉強会<br>
+                    11:00 いざ現場体験へ！昼食前の嚥下体操に参加、食事準備など<br>
+                    12:30 休憩（食事は準備します！）職員との団欒も♪<br>
+                    13:30 実際の介護体験、見学！車椅子の使い方やベッドでの体位変換体験など<br>
+                    14:30 担当者からのフィードバック<br>
+                    15:00 終了<br>
+                    ※スケジュールはカスタマイズ可能です</p>
+                </div>
+
+                <!-- III. Intensive Experience Free Customization Course -->
+                <div class="card">
+                    <h3 class="text-2xl font-bold text-green-700 mb-4">Ⅲ. 介護の仕事・相談援助の仕事<br>ガッツリ体験フリーカスタマイズコース</h3>
+                    <p class="mb-4">2種類の介護体験プログラムです。ご希望を伺いながら「あなただけ」のプログラムを作成します！</p>
+                    <p class="font-bold text-lg mb-2">★介護体験型　定員：1日につき2名</p>
+                    <p class="text-gray-700 mb-2">例：日勤×2日、夜勤×1日、休み×1日、日勤×1日のプラン<br>
+                    ご利用者に寄り添う介護の体験を少し深く知りたい方、24時間、365日違う介護を体験してみませんか？</p>
+                    <p class="font-bold text-lg mt-4 mb-2">★相談援助体験型　定員：1日につき1名</p>
+                    <p class="text-gray-700">例：1、2日目：特養施設相談員のお仕事<br>
+                    　　3日目：通所相談員のお仕事<br>
+                    　　4日目：地域包括支援センターでのお仕事<br>
+                    　　5日目：特養施設相談員のお仕事とフィードバック</p>
+                </div>
+            </section>
+
+
+            <section id="facilities" class="py-12">
+                <h2 class="section-title">体験施設一覧</h2>
+                <p class="text-center text-lg mb-8">自宅から、学校から近い場所は？特別養護老人ホームについて知りたい！老人保健施設ってなんだろう？などなど選ぶ理由は様々でOK!</p>
+                <div class="facility-grid">
+                    <!-- Corrected course notation for each facility card -->
+                    <div class="facility-card">
+                        <!-- Image of Villa Inariyama -->
+                        <img src="https://i.imgur.com/epI7drI.jpeg" alt="特別養護老人ホームヴィラ稲荷山 画像" class="w-full h-48 object-cover rounded-t-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=画像+読み込み失敗';console.error('画像読み込み失敗: 特別養護老人ホームヴィラ稲荷山。Imgurの直接リンクが正しいか、Imgurの共有設定を確認してください。');">
+                        <h4 class="font-bold text-lg text-gray-800">特別養護老人ホームヴィラ稲荷山</h4>
+                        <p class="text-sm text-gray-600">（京都市伏見区）</p>
+                        <p class="text-sm course-support-text">
+                            <span class="orange-text">対応可能なインターンシップ</span>
                             <span class="text-green-600">・オープンカンパニー</span>
                             <span class="text-green-600">・介護1日体験</span>
                             <span class="text-green-600">・相談援助1日体験</span>
@@ -531,7 +599,7 @@
                             <span class="font-bold">アクセス：</span><br>
                             地下鉄東西線「椥辻」駅徒歩15分<br>
                             JR「山科」駅から京阪バス26系統大宅行「大宅」停下車徒歩7分<br>
-                            <a href="https://www.google.com/maps/place/%E7%89%B9%E5%88%A5%E9%A4%8A%E8%AD%B7%E8%80%81%E4%BA%BA%E3%83%9B%E3%83%BC%E3%83%A0+%E3%83%B4%E3%82%A3%E3%83%A9%E7%A8%B2%E8%8D%B7%E5%B1%B1/@34.973428,135.773016,15z/data=!4m6!3m5!1s0x60010f38d335bbc7:0x95628922e797d8e3!8m2!3d34.9734284!4d135.7730161!16s%2Fg%2F1tfjfflc?hl=ja&entry=ttu&g_ep=EgoyMDI1MDYx七.0IKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
+                            <a href="https://www.google.com/maps?ll=34.971131,135.826098&z=15&t=m&hl=ja&gl=JP&mapclient=embed&cid=9465310590999781784" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
                         </p>
                     </div>
                     <div class="facility-card">
@@ -598,7 +666,7 @@
                     <div class="facility-card">
                         <img src="https://i.imgur.com/H94mVyo.jpeg" alt="城陽市立東部デイサービスセンター 画像" class="w-full h-48 object-cover rounded-t-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=画像+読み込み失敗';console.error('画像読み込み失敗: 城陽市立東部デイサービスセンター。Imgurの共有設定を確認してください。');">
                         <h4 class="font-bold text-lg text-gray-800">城陽市立東部デイサービスセンター</h4>
-                        <p class="text-sm text-gray-600">（京都府城陽市）</p>
+                        <p class="text-sm text-gray-600">（京都市城陽市）</p>
                         <p class="text-sm course-support-text">
                             <span class="orange-text">対応可能なインターンシップ</span><br>
                             <span class="text-green-600">・介護1日体験</span>
@@ -638,7 +706,7 @@
                             <span class="font-bold">アクセス：</span><br>
                             JR京都駅・近鉄京都駅・京都市営地下鉄京都駅から徒歩10分<br>
                             京都市営バス 七条堀川バス停から徒歩3分・下京総合庁舎前から徒歩5分<br>
-                            <a href="https://www.google.com/maps/place/%E6%9C%A8%E6%B4%A5%E5%B1%8B%E6%A9%8B%E6%AD%A6%E7%94%B0%E7%97%85%E9%99%A2+%E4%BB%8B%E8%AD%B7%E5%8C%BB%E7%99%82%E9%99%A2/@34.988622,135.753995,15z/data=!4m6!3m5!1s0x600108a7afa97a6b:0xe3481695ae573098!8m2!3d34.9886224!4d135.7539945!16s%2Fg%2F1tk67l8g?hl=ja&entry=ttu&g_ep=EgoyMDI1MDYx七.0IKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
+                            <a href="https://www.google.com/maps?ll=34.988622,135.753995,15z/data=!4m6!3m5!1s0x600108a7afa97a6b:0xe3481695ae573098!8m2!3d34.9886224!4d135.7539945!16s%2Fg%2F1tk67l8g?hl=ja&entry=ttu&g_ep=EgoyMDI1MDYx七.0IKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
                         </p>
                     </div>
                     <div class="facility-card">
@@ -1006,44 +1074,32 @@
                     submissionData['message'] = form.elements['message'].value;
 
 
-                    // Convert submissionData to URLSearchParams format for POST request
-                    const submissionParams = new URLSearchParams();
-                    for (const key in submissionData) {
-                        if (Array.isArray(submissionData[key])) {
-                            // If it's an array (like desired-facility), append each item separately
-                            submissionData[key].forEach(item => submissionParams.append(key, item));
-                        } else {
-                            submissionParams.append(key, submissionData[key]);
-                        }
-                    }
+                    // Convert submissionData to JSON string for POST request (Previous working method)
+                    // ★★★ ここでJSON形式でデータを送るようにします ★★★
+                    const appsScriptUrl = "https://script.google.com/macros/s/AKfycbwpM7hz9DWm98nTOjHZlO14Zr6fx3Tt1JUtrwXnxHZLJ7ygUnr53X81RkjJ9p7IacAc4g/exec"; 
 
-                    console.log("Data to be sent (URLSearchParams):", submissionParams.toString());
-                    
-                    // Google Apps ScriptのウェブアプリURLをここに設定
-                    const appsScriptUrl = "https://script.google.com/macros/s/AKfycbzR4B8CLshiz9m6pe671pe3eop8ka9MC3ozSOFoQvG9PwnRo0IlHWk6uHh4HN1rQOYH/exec"; 
-
-                    // Check if URL is still a placeholder and raise an error
+                    // URLがプレースホルダーのままではないか確認し、エラーを出す
                     if (appsScriptUrl === "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE" || !appsScriptUrl.startsWith("https://script.google.com/macros/s/")) {
-                        console.error("エラー: Google Apps ScriptのURLが設定されていません。コード内の 'https://script.google.com/macros/s/AKfycbzR4B8CLshiz9m6pe671pe3eop8ka9MC3ozSOFoQvG9PwnRo0IlHWk6uHh4HN1rQOYH/exec' を実際のURLに置き換えてください。");
+                        console.error("エラー: Google Apps ScriptのURLが設定されていません。コード内の 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE' を実際のURLに置き換えてください。");
                         alert("設定エラー: お申込みを送信できませんでした。開発者にお問い合わせください。");
-                        return; // Stop submission process
+                        return; // 送信処理を中断
                     }
 
                     try {
                         console.log("Sending fetch request to:", appsScriptUrl);
                         const response = await fetch(appsScriptUrl, {
                             method: 'POST',
-                            mode: 'no-cors', // To avoid CORS errors (but exact response cannot be received)
+                            mode: 'no-cors', // CORSエラーを避けるため（ただし正確なレスポンスは受け取れない）
                             headers: {
-                                'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', // Ensure correct Content-Type
+                                'Content-Type': 'application/json; charset=UTF-8', // JSON形式であることを明示
                             },
-                            body: submissionParams.toString(), // Send as URL-encoded string
+                            body: JSON.stringify(submissionData), // JSON文字列としてデータを送信
                         });
 
                         console.log('Form submission attempted. Check Google Sheet.');
-                        alert('お申込みありがとうございます。内容を確認後、担当者よりご連絡いたします。'); // Feedback to user
-                        internshipForm.reset(); // Reset form
-                        showEventPage(); // Return to event page after submission
+                        alert('お申込みありがとうございます。内容を確認後、担当者よりご連絡いたします。'); // ユーザーへのフィードバック
+                        internshipForm.reset(); // フォームをリセット
+                        showEventPage(); // 送信後、イベントページに戻る
 
                     } catch (error) {
                         console.error('Error submitting form:', error);
@@ -1052,7 +1108,7 @@
                 });
 
             } else {
-                console.error("Error: 'internshipForm' element not found. Please ensure your HTML form has id='internshipForm'.");
+                console.error("エラー: 'internshipForm' 要素が見つかりません。HTMLフォームにid='internshipForm'があることを確認してください。");
             }
         });
     </script>

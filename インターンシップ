@@ -6,7 +6,7 @@
     <title>武田病院グループ 夏期インターンシッププログラム「フクシノイリグチ」</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Add for form -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* グローバルなスタイル */
         body {
@@ -209,7 +209,7 @@
                     </p>
                 </div>
                 <!-- 「エントリーはこちら」ボタンをGoogleフォームへのリンクに変更 -->
-                <a href="https://forms.gle/YpfQLu91ZiLvUG51A" target="_blank" class="btn-primary">エントリーはこちら</a>
+                <a href="https://forms.gle/YpfQLu91ZiLvUG51A" target="_blank" class="btn-primary block mx-auto mt-8">エントリーはこちら</a>
             </div>
         </header>
 
@@ -245,7 +245,7 @@
                     <!-- Course III -->
                     <div class="card">
                         <h3 class="course-title">Ⅲ. 介護の仕事・相談援助の仕事<br>ガッツリ体験フリーカスタマイズコース</h3>
-                        <p class="mb-4">2種類の介護体験プログラムです。ご希望を伺いながら「あなただけ」のプログラムを作成します！</p>
+                        <p class="text-gray-700 mb-4">2種類の介護体験プログラムです。ご希望を伺いながら「あなただけ」のプログラムを作成します！</p>
                         <ul class="feature-list">
                             <li>日程：令和7年7月～9月</li>
                             <li>定員：介護体験型 1日につき2名、相談援助体験型 1日につき1名</li>
@@ -341,7 +341,7 @@
                         <p class="text-sm text-gray-600 mt-2 access-info">
                             <span class="font-bold">アクセス：</span><br>
                             京都市営地下鉄東西線「石田駅」下車 徒歩5分<br>
-                            <a href="https://www.google.com/maps?ll=34.938771,135.804961&z=16&t=m&hl=ja&gl=US&mapclient=embed&q=%E3%80%92601-1434+%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%BC%8F%E8%A6%8B%E5%8C%BA%E7%9F%B3%E7%94%B0%E6%A3%AE%E5%8D%97%E7%94%BA%EF%BC%99+%E6%97%A5%E6%9C%AC" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
+                            <a href="https://www.google.com/maps/place/%E6%97%A5%E6%9C%AC%E3%80%81%E3%80%92601-1434+%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%BC%8F%E8%A6%8B%E5%8C%BA%E4%BC%8F%E8%A6%8B%E5%8C%BA%E7%9F%B3%E7%94%B0%E6%A3%AE%E5%8D%97%E7%94%BA%EF%BC%99/@34.938771,135.804961,16z/data=!4m6!3m5!1s0x60010e234ceb0497:0xa1de315ffe59f08c!8m2!3d34.9389584!4d135.805059!16s%2Fg%2F12hnrfxdh?hl=ja&entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
                         </p>
                     </div>
                     <div class="facility-card">
@@ -417,13 +417,13 @@
                             <span class="font-bold">アクセス：</span><br>
                             JR奈良線、京阪宇治線「黄檗駅」から南西に徒歩15分<br>
                             京阪電車「三室戸駅」から北西に徒歩15分<br>
-                            <a href="https://www.google.com/maps?ll=34.906845,135.798297,15z/data=!4m6!3m5!1s0x600111b7a43af13f:0xf90536d85377c501!8m2!3d34.906845!4d135.7982968!16s%2Fg%2F11bxfg78r4?hl=ja&entry=ttu&g_ep=EgoyMDI1MDYx七.0IKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
+                            <a href="https://www.google.com/maps?ll=34.906845,135.798297&z=15&t=m&hl=ja&gl=JP&mapclient=embed&cid=17943808593068803329" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
                         </p>
                     </div>
                     <div class="facility-card">
                         <img src="https://i.imgur.com/H94mVyo.jpeg" alt="城陽市立東部デイサービスセンター 画像" class="w-full h-48 object-cover rounded-t-lg mb-4" onerror="this.onerror=null;this.src='https://placehold.co/300x200/cccccc/ffffff?text=画像+読み込み失敗';console.error('画像読み込み失敗: 城陽市立東部デイサービスセンター。Imgurの共有設定を確認してください。');">
                         <h4 class="font-bold text-lg text-gray-800">城陽市立東部デイサービスセンター</h4>
-                        <p class="text-sm text-gray-600">（京都市城陽市）</p>
+                        <p class="text-sm text-gray-600">（京都府城陽市）</p>
                         <p class="text-sm course-support-text">
                             <span class="orange-text">対応可能なインターンシップ</span><br>
                             <span class="text-green-600">・介護1日体験</span>
@@ -463,7 +463,7 @@
                             <span class="font-bold">アクセス：</span><br>
                             JR京都駅・近鉄京都駅・京都市営地下鉄京都駅から徒歩10分<br>
                             京都市営バス 七条堀川バス停から徒歩3分・下京総合庁舎前から徒歩5分<br>
-                            <a href="https://www.google.com/maps?ll=34.988622,135.753995,15z/data=!4m6!3m5!1s0x600108a7afa97a6b:0xe3481695ae573098!8m2!3d34.9886224!4d135.7539945!16s%2Fg%2F1tk67l8g?hl=ja&entry=ttu&g_ep=EgoyMDI1MDYx七.0IKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
+                            <a href="https://www.google.com/maps?ll=34.988622,135.753995&z=15&t=m&hl=ja&gl=JP&mapclient=embed&cid=16377364877063696536" target="_blank" class="text-blue-600 font-bold">詳細はこちら</a>
                         </p>
                     </div>
                     <div class="facility-card">
@@ -481,7 +481,6 @@
                         </p>
                     </div>
                 </div>
-                <!-- Remove legend section -->
                 <ul class="list-disc list-inside text-left mx-auto w-fit" style="display: none;">
                     <li>Ⅰ　…オープンカンパニー</li>
                     <li>Ⅱ①…介護1日体験</li>
@@ -490,50 +489,28 @@
                 </ul>
             </section>
 
-            <!-- Contact/Entry section -->
             <section id="contact" class="py-12">
                 <h2 class="section-title">お問い合わせ・エントリー</h2>
                 <div class="contact-info card">
                     <p class="text-xl font-bold mb-4">エントリーお待ちしています！</p>
                     <p class="text-lg mb-2">登録いただいたLINEに、質問はもちろん、エントリーに関することでも何でもコメントOK！お気軽にお問い合わせください！</p>
-                    <!-- 「今すぐエントリー！」ボタンもGoogleフォームへのリンクに変更 -->
                     <a href="https://forms.gle/YpfQLu91ZiLvUG51A" target="_blank" class="btn-primary block mx-auto mt-4 mb-8">今すぐエントリー！</a>
                 </div>
             </section>
         </main>
 
-        <!-- Footer section -->
         <footer class="bg-gray-800 text-white text-center py-6 mt-12 rounded-t-2xl">
-            <p>&copy; 2025 武田病院グループ. All rights reserved.</p>
+            <p>© 2025 武田病院グループ. All rights reserved.</p>
         </footer>
-    </div> <!-- /#event-page-content -->
-
-    <!-- 旧フォームページコンテンツは不要になったため削除します -->
-    <!-- 元のIDを持つdiv要素とそのコンテンツを削除 -->
-    <!-- <div id="form-page-content" style="display: none;"> ... </div> -->
-
+    </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // イベントページコンテンツの表示/非表示の切り替えロジックは不要になりました
+            // このHTMLはGoogleフォームへ直接リンクするため、以前のカスタムフォームのJavaScriptロジックは不要です。
+            // 以下のコメントアウトされたコードは、以前のカスタムフォームで使用されていたものです。
+            // 必要に応じてApps Scriptとの連携を再構築する場合は、これらのコードを参考にしてください。
+
             // const eventPageContent = document.getElementById('event-page-content');
             // const formPageContent = document.getElementById('form-page-content');
-            // showEventPage(); // 初回表示はイベントページ
-
-            // エントリーボタンへのイベントリスナーは不要になりました（直接リンクになったため）
-            // const entryButton = document.getElementById('entryButton');
-            // const entryButtonContact = document.getElementById('entryButtonContact');
-            // if (entryButton) {
-            //     entryButton.addEventListener('click', function() {
-            //         window.open('https://forms.gle/YpfQLu91ZiLvUG51A', '_blank');
-            //     });
-            // }
-            // if (entryButtonContact) {
-            //     entryButtonContact.addEventListener('click', function() {
-            //         window.open('https://forms.gle/YpfQLu91ZiLvUG51A', '_blank');
-            //     });
-            // }
-
-            // 旧フォームのJavaScriptロジックも不要になったため削除
             // const internshipForm = document.getElementById('internshipForm');
             // const confirmationModal = document.getElementById('confirmationModal');
             // const confirmationDetails = document.getElementById('confirmationDetails');
@@ -541,7 +518,42 @@
             // const confirmSubmitButton = document.getElementById('confirmSubmitButton');
             // const backToEventPageButton = document.getElementById('backToEventPageButton');
 
+            // // フォームから取得するデータのラベルマッピング
+            // const fieldLabels = {
+            //     'name': 'お名前',
+            //     'kana': 'フリガナ',
+            //     'email': 'メールアドレス',
+            //     'phone': '電話番号',
+            //     'desired-facility': 'インターン希望事業所',
+            //     'desired-role': '希望するインターン',
+            //     'school-name': '学校名・学部',
+            //     'internship-duration': '期間',
+            //     'message': 'その他ご質問・メッセージ'
+            // };
+
+            // // イベントページを表示する関数
+            // window.showEventPage = function() {
+            //     if (eventPageContent && formPageContent) {
+            //         eventPageContent.style.display = 'block';
+            //         formPageContent.style.display = 'none';
+            //         window.scrollTo(0, 0); // ページトップに戻る
+            //     }
+            // }
+
+            // // 申込フォームを表示する関数
+            // window.showApplicationForm = function() {
+            //     if (eventPageContent && formPageContent) {
+            //         eventPageContent.style.display = 'none';
+            //         formPageContent.style.display = 'block';
+            //         window.scrollTo(0, 0); // ページトップに戻る
+            //     }
+            // }
+
+            // // 初回表示はイベントページ
+            // showEventPage(); // この関数はもう呼び出されません（HTMLが直接Googleフォームへリンクするため）
+
             // if (internshipForm) {
+            //     // フォームの送信（確認画面表示）
             //     internshipForm.addEventListener('submit', async function(event) {
             //         event.preventDefault(); 
             //         // ... (フォームバリデーションとデータ収集ロジック) ...
